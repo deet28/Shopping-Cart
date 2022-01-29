@@ -22,20 +22,11 @@
   margin-right:2rem;
  }
 
- .nav-item li{
+.nav-item li{
   margin-right:2rem;
   line-height: 9rem;
 }
-.nav-cart{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 2rem;
-  min-width: 3.5rem;
-  margin-top: 3.5rem;
-  border-radius: 80px;
-  background-color:hsl(300,100%,85%);
-}
+
 .nav-item li:hover {
   text-decoration: underline;
   color:white;
@@ -46,12 +37,23 @@
   text-decoration: none;
 }
 
+.nav-cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2rem;
+  min-width: 3.5rem;
+  margin-top: 3.5rem;
+  border-radius: 80px;
+  background-color:hsl(300,100%,85%);
+}
+
 .nav-cart:hover{
   cursor:pointer;
   background-color:hsl(300,100%,90%);
   box-shadow: 1px 1px 2px 1px black;
-
 }
+
 .cart-button{
   max-height:2rem;
   max-width:2rem;

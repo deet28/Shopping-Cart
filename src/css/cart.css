@@ -32,6 +32,16 @@
   cursor:pointer;
 }
 
+.close-cart{
+  margin-right:2.5rem;
+  margin-top:2rem;
+  margin-left:0rem;
+}
+.close-cart:hover{
+  cursor:pointer;
+}
+
+
 .visible{
   visibility:visible;
   z-index: 2;
@@ -43,15 +53,6 @@
 .hidden{
   opacity:0.5;
   z-index:-1;
-}
-
-.close-cart{
-  margin-right:2.5rem;
-  margin-top:2rem;
-  margin-left:0rem;
-}
-.close-cart:hover{
-  cursor:pointer;
 }
 
 @media(max-width:700px){
