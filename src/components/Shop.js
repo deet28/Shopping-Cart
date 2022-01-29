@@ -15,6 +15,7 @@ import sandStone from '../media/SandStone.jpg';
 import travel from '../media/Travel.jpg';
 
 
+
 function Shop() {
   const [jackets, setJackets] = useState([
     {name:`Canvas Anorak`,src:canvas,price:`$48.50`,id:uuidv4()},
@@ -32,18 +33,18 @@ function Shop() {
   ])
   return (
     <div className="App">
-      <h1>Shop</h1>
+      <h1 className = "Page-Title">Shop</h1>
 
     <div className = "Shop-Card-Div">
       {jackets.map((index => (
-        <div className = "Shop-Card">
+        <div className = "Shop-Card" key = {index.id}>
           <img
             className = "Shop-Image"
             src = {index.src}
             key = {index.id}
           />
-          <p>{index.name}</p>
-          <p>{index.price}</p>
+          <p className = "Shop-Text">{index.name}</p>
+          <p className = "Shop-Text">{index.price}</p>
           <button
             className = "Shop-Button">
               Add to Cart

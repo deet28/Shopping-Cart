@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*box-shadow: 10px 5px 5px 2px lightgray;*/
+  box-shadow: 10px 5px 5px 2px lightgray;
 }
 .Shop-Image{
   margin-top:1rem;

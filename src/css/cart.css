@@ -1,15 +1,16 @@
 .cart{
   border:1px solid black;
-  width:75%;
+  width:65%;
+  transition:1s;
   height:100%;
   position:fixed;
   margin-left:10rem;
-  right:0;
+  right:-100%;
   z-index:2;
   font-size:28px;
   text-align:center;
   background-color: white;
-  box-shadow: 10px 20px 20px 10px;
+  box-shadow: 10px 20px 20px 25px;
   visibility: hidden;
 }
 
@@ -33,6 +34,24 @@
 
 .visible{
   visibility:visible;
+  z-index: 2;
+  transform-origin: 100% 50%;
+  transform:translateX(-150%);
+  transition:1s;
+}
+
+.hidden{
+  opacity:0.5;
+  z-index:-1;
+}
+
+.close-cart{
+  margin-right:2.5rem;
+  margin-top:2rem;
+  margin-left:0rem;
+}
+.close-cart:hover{
+  cursor:pointer;
 }
 
 @media(max-width:700px){
