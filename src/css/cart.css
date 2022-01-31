@@ -42,6 +42,15 @@
   cursor:pointer;
 }
 
+.cart-item-div{
+  
+}
+.cart-item-listing{
+  font-size:16px;
+  text-emphasis: 100;
+  text-align: left;
+}
+
 
 .visible{
   visibility:visible;
