@@ -6,15 +6,13 @@ import { bindActionCreators } from "redux"
 function Cart() {
 
   const state = useSelector((state)=>state);
-
-
   const dispatch = useDispatch()
   const { removeFromCart } = bindActionCreators(actionCreators,dispatch)
 
   
   function other(){
     state.cart.map((index => {
-      console.log(index.target.name);
+      //console.log(index.target.name);
     }))
   }
   
@@ -25,8 +23,10 @@ function Cart() {
       </div>
     }
     else if (state.cart.length > 0){
+      console.log(state.cart)
+      console.log( (state.cart.some(index => index.target.name == "Duck Jacket")) );
       return state.cart.map((index => (
-      <div className = "cart-item-div"key = "index.id">
+      <div className = "cart-item-div" key = {index.target.id}>
         <p className = "cart-item-listing"> {index.target.name}</p>
         <p className = "cart-item-listing"> {index.target.value}</p>
       </div>

@@ -21,10 +21,8 @@ function Shop() {
 
   const state = useSelector((state)=>state);
   const dispatch = useDispatch();
-
   const { addToCart } = bindActionCreators(actionCreators,dispatch)
 
-  console.log(addToCart);
   
   const [jackets, setJackets] = useState([
     {name:`Canvas Anorak`,src:canvas,price:`$48.50`,id:uuidv4()},
@@ -40,21 +38,6 @@ function Shop() {
     {name:`Sand Stone Jacket`,src:sandStone,price:`$59.50`,id:uuidv4()},
     {name:'Travel Jacket',src:travel,price:`$90.00`,id:uuidv4()}
   ])
-
-  const [cart, setCart] = useState([
-  ]);
-
-
-  function cartAdd(e){
-    for(let i = 0; i < jackets.length; i++){
-      if(e.target.name === jackets[i].name){
-        let newPurchase = 
-        {name:jackets[i].name,src:jackets[i].src,price:jackets[i].price,id:uuidv4()};
-        setCart([...cart,newPurchase])
-      }
-    }
-    console.log(cart);
-  }
 
  
   return (
@@ -74,6 +57,7 @@ function Shop() {
             name = {index.name}
             value = {index.price}
             id = {index.id}
+            count = {0}
             className = "Shop-Button"
             onClick = {addToCart}>
             Add to Cart
@@ -86,3 +70,19 @@ function Shop() {
  }
 
 export default Shop;
+
+
+//predux
+//function cartAdd(e){
+//  for(let i = 0; i < jackets.length; i++){
+//    if(e.target.name === jackets[i].name){
+//      let newPurchase = 
+//      {name:jackets[i].name,src:jackets[i].src,price:jackets[i].price,id:uuidv4()};
+//      setCart([...cart,newPurchase])
+//    }
+//  }
+//  console.log(cart);
+//}
+
+//const [cart, setCart] = useState([
+//]);
