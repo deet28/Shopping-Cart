@@ -25,13 +25,15 @@ function Nav() {
   let images;
   let shopText;
   let pageTitle;
+  let navButtons;
 
   function showCart(){
     shopCart = document.querySelector('.cart');
-    images = document.querySelectorAll("img");
-    buttons = document.querySelectorAll("button");
+    images = document.querySelectorAll(".Shop-Image");
+    buttons = document.querySelectorAll(".Shop-Button");
     shopText = document.querySelectorAll(".Shop-Text");
     pageTitle = document.querySelectorAll(".Page-Title");
+    navButtons = document.querySelectorAll(".nav-item")
     
     shopCart.classList.add('visible');
     for(let i = 0; i < buttons.length; i++){
@@ -43,6 +45,9 @@ function Nav() {
     }
     for(let i = 0; i < pageTitle.length;i++){
         pageTitle[i].classList.add('hidden');
+    }
+    for(let i = 0; i< navButtons.length;i++){
+      navButtons[i].classList.add('hidden-list');
     }
   }
  
