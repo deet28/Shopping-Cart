@@ -1,9 +1,24 @@
 import React from 'react';
+import { useState }from 'react';
 import Cart from './Cart'
 import { Link } from 'react-router-dom';
+import { useSelector,useDispatch } from 'react-redux'
+import { actionCreators } from "../state/index"
+import { bindActionCreators } from "redux"
 import ShoppingCart from '../media/ShoppingCart.png';
 
 function Nav() {
+  let amount = 0;
+
+  const state = useSelector((state)=>state);
+
+  const amountOfItems = useSelector(state => {
+    state.cart.map((index => {
+      let temp = parseInt(index.target.title);
+      amount += parseInt(temp);
+    }))
+    return amount;
+  })
   
   let shopCart;
   let buttons;
@@ -53,6 +68,7 @@ function Nav() {
               src = {ShoppingCart} 
               className = "cart-button">
             </img>
+            <div>{amount}</div>
           </li>
       </ul>
     </div>

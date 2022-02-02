@@ -23,20 +23,20 @@ function Shop() {
   const dispatch = useDispatch();
   const { addToCart } = bindActionCreators(actionCreators,dispatch)
 
-  
+
   const [jackets, setJackets] = useState([
-    {name:`Canvas Anorak`,src:canvas,price:`$48.50`,id:uuidv4()},
-    {name:`Challenger Jacket`,src:challenger,price:`$98.00`,id:uuidv4()},
-    {name:`Down Coat`,src:downCoat,price:`$130.00`,id:uuidv4()},
-    {name:`Down Jacket`,src:downJacket,price:`$170.00`,id:uuidv4()},
-    {name:`Duck Jacket`,src:duckJacket,price:`$60.00`,id:uuidv4()},
-    {name:`Field Jacket`,src:fieldJacket,price:`$89.50`,id:uuidv4()},
-    {name:`Insulated Jacket`,src:insulatedJacket,price:`$79.50`,id:uuidv4()},
-    {name:'Light Weight',src:lightWeight,price:`$50.00`,id:uuidv4()},
-    {name:'Mountain Classic',src:mountainClassic,price:`$99.50`,id:uuidv4()},
-    {name:`Quilted Liner`,src:quiltedLiner,price:`$70.00`,id:uuidv4()},
-    {name:`Sand Stone Jacket`,src:sandStone,price:`$59.50`,id:uuidv4()},
-    {name:'Travel Jacket',src:travel,price:`$90.00`,id:uuidv4()}
+    {name:`Canvas Anorak`,src:canvas,price:48.50,newPrice:48.50,id:uuidv4(),count:0},
+    {name:`Challenger Jacket`,src:challenger,price:98.00,newPrice:98.00,id:uuidv4(),count:0},
+    {name:`Down Coat`,src:downCoat,price:130.00,newPrice:130.00,id:uuidv4(),count:0},
+    {name:`Down Jacket`,src:downJacket,price:170.00,newPrice:170.00,id:uuidv4(),count:0},
+    {name:`Duck Jacket`,src:duckJacket,price:60.00,newPrice:60.00,id:uuidv4(),count:0},
+    {name:`Field Jacket`,src:fieldJacket,price:89.50,newPrice:89.50,id:uuidv4(),count:0},
+    {name:`Insulated Jacket`,src:insulatedJacket,price:79.50,newPrice:79.50,id:uuidv4(),count:0},
+    {name:'Light Weight',src:lightWeight,price:50.00,newPrice:50.00,id:uuidv4(),count:0},
+    {name:'Mountain Classic',src:mountainClassic,price:99.50,newPrice:99.50,id:uuidv4(),count:0},
+    {name:`Quilted Liner`,src:quiltedLiner,price:70.00,newPrice:70.00,id:uuidv4(),count:0},
+    {name:`Sand Stone Jacket`,src:sandStone,price:59.50,newPrice:59.50,id:uuidv4(),count:0},
+    {name:'Travel Jacket',src:travel,price:90.00,newPrice:90.00,id:uuidv4(),count:0}
   ])
 
  
@@ -57,7 +57,7 @@ function Shop() {
             name = {index.name}
             value = {index.price}
             id = {index.id}
-            count = {0}
+            title = {index.count}
             className = "Shop-Button"
             onClick = {addToCart}>
             Add to Cart
@@ -71,18 +71,3 @@ function Shop() {
 
 export default Shop;
 
-
-//predux
-//function cartAdd(e){
-//  for(let i = 0; i < jackets.length; i++){
-//    if(e.target.name === jackets[i].name){
-//      let newPurchase = 
-//      {name:jackets[i].name,src:jackets[i].src,price:jackets[i].price,id:uuidv4()};
-//      setCart([...cart,newPurchase])
-//    }
-//  }
-//  console.log(cart);
-//}
-
-//const [cart, setCart] = useState([
-//]);
