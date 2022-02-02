@@ -13,6 +13,7 @@
   background-color: white;
   box-shadow: 10px 20px 20px 25px;
   visibility: hidden;
+  scroll-behavior: smooth;
 }
 
 .cart-header{
@@ -97,6 +98,7 @@
   transform:translateX(-150%);
   transition:1s;
   overflow-y: scroll;
+  height:100vh;
 }
 
 .hidden{
@@ -107,7 +109,7 @@
 @media(max-width:700px){
   .cart{
     height:200rem;
-    top:2rem;
+    top:0;
     z-index: 2;
   }
   .close-cart{
@@ -116,5 +118,7 @@
   }
   .visible{
     overflow-y: scroll;
+    height:100vh;
+    scroll-behavior: smooth;
   }
 }
