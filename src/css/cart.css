@@ -114,4 +114,7 @@
     margin-right:1.5rem;
     line-height: 3.2rem;
   }
+  .visible{
+    overflow-y: scroll;
+  }
 }

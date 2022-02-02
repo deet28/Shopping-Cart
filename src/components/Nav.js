@@ -3,8 +3,6 @@ import { useState }from 'react';
 import Cart from './Cart'
 import { Link } from 'react-router-dom';
 import { useSelector,useDispatch } from 'react-redux'
-import { actionCreators } from "../state/index"
-import { bindActionCreators } from "redux"
 import ShoppingCart from '../media/ShoppingCart.png';
 
 function Nav() {

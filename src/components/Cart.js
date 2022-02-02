@@ -5,14 +5,11 @@ import { bindActionCreators } from "redux"
 
 function Cart() {
 
-  let amount = 0;
-
-
   const state = useSelector((state)=>state);
   const dispatch = useDispatch()
+  const { addToCart } = bindActionCreators(actionCreators,dispatch);
   const { removeFromCart } = bindActionCreators(actionCreators,dispatch)
 
-  console.log(state.cart);
   let shopCart;
   let navButtons;
   let buttons;
@@ -35,9 +32,25 @@ function Cart() {
         <p className = "cart-item-listing"> {index.target.name}</p>
         <p className = "cart-item-listing"> ${index.target.newPrice}</p>
         <div className = "cart-count">
-          <button type = "submit" className = "cart-count-minus">-</button>
+          <button 
+            type = "submit" 
+            name = {index.target.name}
+            value = {index.target.price}
+            id = {index.target.id}
+            title = {index.target.count}
+            onClick = {removeFromCart}
+            className = "cart-count-minus">-
+          </button>
           <p className = "cart-item-listing"> {index.target.title} </p>
-          <button type = "submit" className = "cart-count-plus">+</button>
+          <button 
+            type = "submit" 
+            name = {index.target.name}
+            value = {index.target.price}
+            id = {index.target.id}
+            title = {index.target.count}
+            className = "cart-count-plus"
+            onClick = {addToCart}>+
+            </button>
         </div>
         
       </div>
