@@ -24,6 +24,7 @@ function Nav() {
   let shopText;
   let pageTitle;
   let navButtons;
+  let textDivs;
 
   function showCart(){
     shopCart = document.querySelector('.cart');
@@ -32,6 +33,7 @@ function Nav() {
     shopText = document.querySelectorAll(".Shop-Text");
     pageTitle = document.querySelectorAll(".Page-Title");
     navButtons = document.querySelectorAll(".nav-item")
+    textDivs = document.querySelectorAll(".Home-Text")
     
     shopCart.classList.add('visible');
     for(let i = 0; i < buttons.length; i++){
@@ -47,13 +49,16 @@ function Nav() {
     for(let i = 0; i< navButtons.length;i++){
       navButtons[i].classList.add('hidden-list');
     }
+    for(let i = 0; i < textDivs.length; i++){
+      textDivs[i].classList.add('hidden');
+    }
   }
  
   return (
     <>
     <Cart></Cart>
     <div className = "nav-main">
-      <h2 className = "store-name">Store</h2>
+      <h2 className = "store-name">coats.</h2>
       <ul className = "nav-bar">
         <Link className = "nav-item" to = "/Home">
           <li>Home</li>

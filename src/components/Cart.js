@@ -16,6 +16,7 @@ function Cart() {
   let images;
   let shopText;
   let pageTitle;
+  let text;
 
   function makeCart(){
     if (state.cart.length === 0){
@@ -59,12 +60,13 @@ function Cart() {
   }
 
   function hideDisplay(){
-    shopCart = document.querySelector('.cart');
+    shopCart = document.querySelector(".cart");
     images = document.querySelectorAll(".Shop-Image");
     buttons = document.querySelectorAll(".Shop-Button");
     shopText = document.querySelectorAll(".Shop-Text");
     pageTitle = document.querySelectorAll(".Page-Title");
     navButtons = document.querySelectorAll(".nav-item");
+    text = document.querySelectorAll(".Home-Text");
     
     for(let i = 0; i < buttons.length; i++){
       if (shopCart.classList.contains('visible')===true){
@@ -94,6 +96,13 @@ function Cart() {
         navButtons[i].classList.add('hidden-list')
       } else {
         navButtons[i].classList.remove('hidden-list')
+      }
+      for(let i = 0;i < text.length; i++){
+        if(shopCart.classList.contains('visible')===true){
+          text[i].classList.add('hidden')
+        } else {
+          text[i].classList.remove('hidden')
+        }
       }
     }
   }

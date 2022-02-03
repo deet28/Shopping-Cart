@@ -1,0 +1,26 @@
+.App-Home{
+  margin-top:0;
+  background-image: url(../media/StockJacket3.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-attachment: fixed;
+  min-height:100vh;
+  overflow: hidden;
+}
+
+.App-Home img{
+  min-height:100%;
+  background-attachment: fixed;
+}
+.Page-Title{
+  margin-left:0;
+}
+
+.Home-Text{
+  font-size: 26px;
+  color:white;
+  line-height: 8rem;
+  max-width: 75vw;
+  margin-left:0;
+}
