@@ -13,7 +13,7 @@ import fieldJacket from '../media/FieldJacket.jpg';
 import insulatedJacket from '../media/Insulated.jpg';
 import lightWeight from '../media/LightWeightSynchilla.jpg';
 import mountainClassic from '../media/MountainClassic.jpg';
-import quiltedLiner from '../media/QuiltedLiner.jp2';
+import quiltedLiner from '../media/QuiltedLiner.jpg';
 import sandStone from '../media/SandStone.jpg';
 import travel from '../media/Travel.jpg';
 
@@ -42,23 +42,24 @@ function Shop() {
  
   return (
   <div className="App">
-      <h1 className = "Page-Title">Shop</h1>
-    <div className = "Shop-Card-Div">
+      <h1 className = "page-title">Shop</h1>
+    <div className = "shop-card-div">
       {jackets.map((index => (
-        <div className = "Shop-Card" key = {index.id}>
+        <div className = "shop-card" key = {index.id}>
           <img
-            className = "Shop-Image"
+            className = "shop-image"
             src = {index.src}
             key = {index.id}
           />
-          <p className = "Shop-Text">{index.name}</p>
-          <p className = "Shop-Text">{index.price}</p>
-          <button
+          <p className = "shop-text">{index.name}</p>
+          <p className = "shop-text">${index.price.toFixed(2)}</p>
+            <button className = "pseudo-shop-button">Add to Cart</button>
+            <button
             name = {index.name}
             value = {index.price}
             id = {index.id}
             title = {index.count}
-            className = "Shop-Button"
+            className = "shop-button"
             onClick = {addToCart}>
             Add to Cart
           </button>

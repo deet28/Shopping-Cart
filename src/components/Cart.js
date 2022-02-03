@@ -16,7 +16,9 @@ function Cart() {
   let images;
   let shopText;
   let pageTitle;
-  let text;
+  let textHome;
+  let textAbout;
+  let pseudoButtons;
 
   function makeCart(){
     if (state.cart.length === 0){
@@ -61,20 +63,29 @@ function Cart() {
 
   function hideDisplay(){
     shopCart = document.querySelector(".cart");
-    images = document.querySelectorAll(".Shop-Image");
-    buttons = document.querySelectorAll(".Shop-Button");
-    shopText = document.querySelectorAll(".Shop-Text");
-    pageTitle = document.querySelectorAll(".Page-Title");
+    images = document.querySelectorAll(".shop-image");
+    buttons = document.querySelectorAll(".shop-button");
+    shopText = document.querySelectorAll(".shop-text");
+    pageTitle = document.querySelectorAll(".page-title");
     navButtons = document.querySelectorAll(".nav-item");
-    text = document.querySelectorAll(".Home-Text");
+    textHome = document.querySelectorAll(".home-text");
+    textAbout = document.querySelectorAll(".about-text");
+    pseudoButtons = document.querySelectorAll(".pseudo-shop-button");
     
     for(let i = 0; i < buttons.length; i++){
       if (shopCart.classList.contains('visible')===true){
-      buttons[i].classList.add('hidden');
+      buttons[i].classList.add('hidden-button');
       images[i].classList.add('hidden');
       }else{
-      buttons[i].classList.remove('hidden');
+      buttons[i].classList.remove('hidden-button');
       images[i].classList.remove('hidden');
+      }
+    }
+    for(let i = 0; i<pseudoButtons.length;i++){
+      if(shopCart.classList.contains('visible')===true){
+        pseudoButtons[i].classList.add('pseudo-dummy')
+      } else {
+        pseudoButtons[i].classList.remove('pseudo-dummy')
       }
     }
     for(let i = 0; i < shopText.length; i++){
@@ -97,11 +108,18 @@ function Cart() {
       } else {
         navButtons[i].classList.remove('hidden-list')
       }
-      for(let i = 0;i < text.length; i++){
+      for(let i = 0;i < textHome.length; i++){
         if(shopCart.classList.contains('visible')===true){
-          text[i].classList.add('hidden')
+          textHome[i].classList.add('hidden')
         } else {
-          text[i].classList.remove('hidden')
+          textHome[i].classList.remove('hidden')
+        }
+      }
+      for(let i = 0;i < textAbout.length; i++){
+        if(shopCart.classList.contains('visible')===true){
+          textAbout[i].classList.add('hidden')
+        } else {
+          textAbout[i].classList.remove('hidden')
         }
       }
     }

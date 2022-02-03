@@ -1,6 +1,6 @@
-.App-Home{
+.App-About{
   margin-top:0;
-  background-image: url(../media/StockJacket.jpg);
+  background-image: url(../media/StockJacket3.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -17,7 +17,7 @@
   margin-left:0;
 }
 
-.home-text{
+.about-text{
   font-size: 26px;
   color:white;
   line-height: 8rem;

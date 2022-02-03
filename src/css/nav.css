@@ -33,7 +33,6 @@
 
 .nav-item li:hover {
   text-decoration: underline;
-  /*color:white;*/
 }
 
 .nav-item, li:hover, li:visited, li:active{
@@ -50,9 +49,6 @@
   margin-top: 3.5rem;
   margin-right:2.5rem;
   border-radius: 80px;
-  /*background-color:hsl(300,100%,85%);*/
-  /*background-color:hsl(830,80%,70%);*/
-  /*background-color: rgb(221, 235, 241);*/
 }
 
 .nav-cart:hover{
@@ -60,9 +56,6 @@
   transform:rotate(-10deg);
   min-height: 2.1rem;
   min-width: 4.6rem;
-  /*background-color:hsl(300,100%,90%);*/
-  /*background-color: hsl(830,80%,60%);*/
-  /*box-shadow: 1px 1px 2px 1px black;*/
 }
 
 .cart-button{
@@ -85,6 +78,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
+    width:100vw;
   }
   .nav-main ul {
     display: flex;
@@ -98,6 +92,7 @@
     margin-left:0;
     font-size: 1.5rem; 
     margin-right:1.8rem;
+    margin-left:0;
     line-height: 6rem;
   }
   .nav-cart{
@@ -113,7 +108,7 @@
     line-height:2rem;
     font-size: 3rem;
     justify-self: center;
-    text-align: center;
+    text-align: left;
     margin-bottom: 0.5rem;
   }
 
@@ -129,9 +124,7 @@
     min-width:4.5rem;
     margin-top:3rem;
   }
-
 }
-
 @media (min-width:2000px){
   .nav-bar{
     font-size: 2.2rem;
@@ -142,5 +135,4 @@
     min-width:4.5rem;
     margin-top:3rem;
   }
-
 }

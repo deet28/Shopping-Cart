@@ -24,21 +24,26 @@ function Nav() {
   let shopText;
   let pageTitle;
   let navButtons;
-  let textDivs;
+  let textHome;
+  let textAbout;
+  let pseudoButtons;
 
   function showCart(){
     shopCart = document.querySelector('.cart');
-    images = document.querySelectorAll(".Shop-Image");
-    buttons = document.querySelectorAll(".Shop-Button");
-    shopText = document.querySelectorAll(".Shop-Text");
-    pageTitle = document.querySelectorAll(".Page-Title");
+    images = document.querySelectorAll(".shop-image");
+    buttons = document.querySelectorAll(".shop-button");
+    shopText = document.querySelectorAll(".shop-text");
+    pageTitle = document.querySelectorAll(".page-title");
     navButtons = document.querySelectorAll(".nav-item")
-    textDivs = document.querySelectorAll(".Home-Text")
+    textHome = document.querySelectorAll(".home-text")
+    textAbout = document.querySelectorAll(".about-text")
+    pseudoButtons = document.querySelectorAll(".pseudo-shop-button");
     
     shopCart.classList.add('visible');
     for(let i = 0; i < buttons.length; i++){
-      buttons[i].classList.add('hidden');
+      buttons[i].classList.add('hidden-button');
       images[i].classList.add('hidden');
+      pseudoButtons[i].classList.add('pseudo-dummy');
     }
     for(let i = 0; i < shopText.length; i++){
         shopText[i].classList.add('hidden');
@@ -49,8 +54,11 @@ function Nav() {
     for(let i = 0; i< navButtons.length;i++){
       navButtons[i].classList.add('hidden-list');
     }
-    for(let i = 0; i < textDivs.length; i++){
-      textDivs[i].classList.add('hidden');
+    for(let i = 0; i < textHome.length; i++){
+      textHome[i].classList.add('hidden');
+    }
+    for(let i = 0; i < textAbout.length; i++){
+      textAbout[i].classList.add('hidden');
     }
   }
  
