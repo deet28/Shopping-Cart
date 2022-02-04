@@ -45,8 +45,6 @@
 
 p{
   margin-top:1px;
-}
-p{
   font-weight: bold;
 }
 
@@ -92,3 +90,24 @@ p{
   }
 }
 
+@media (min-width:1500px){
+  
+  .shop-image{
+    min-height:30rem;
+  }
+
+  .shop-button{
+    min-height:4rem;
+    min-width:15rem;
+    font-size:2rem;
+  }
+  .page-title-shop{
+    font-size:5rem;
+  }
+
+  p{
+    margin-top:1px;
+    font-weight: bold;
+    font-size:2rem;
+  }
+}

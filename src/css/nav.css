@@ -244,16 +244,28 @@
   }
   
 }
+@media(min-width:700px) and (max-width:1499px){
+  .nav-main li{
+    font-size:2rem;
+  }
+}
 
-@media (min-width:1700px){
-  .nav-bar{
-    font-size: 2rem;
+@media (min-width:1500px){
+  .nav-item li{
+    font-size:2.8rem;
   }
   .nav-cart{
     min-height: 3rem;
     line-height: 2rem;
     min-width:4.5rem;
     margin-top:3rem;
+  }
+  .cart-button{
+    min-height:3rem;
+    min-width:4rem;
+  }
+  .nav-cart-amount{
+    font-size:2rem;
   }
 }
 

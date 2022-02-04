@@ -72,3 +72,14 @@
     line-height:6rem;
   }
 }
+
+@media (min-width:1500px){
+  .page-title-home{
+    font-size: 4rem;
+  }
+  .home-text{
+    font-size:4rem;
+    line-height:12rem;
+  }
+  
+}

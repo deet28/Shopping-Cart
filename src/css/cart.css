@@ -52,7 +52,7 @@
   
 }
 .cart-item-listing{
-  font-size:16px;
+  font-size:1.3rem;
   text-emphasis: 100;
   text-align: left;
 }
@@ -88,6 +88,25 @@
 }
 .cart-count button:hover{
   cursor:pointer;
+  background-color: hsl(100,30%,40%);
+}
+.cart-total{
+  font-size:2rem;
+  margin-top:4rem;
+}
+.cart-checkout{
+  height:3rem;
+  width:17rem;
+  font-size: 1.5rem;
+  background-color: hsl(100,30%,50%);
+  color:white;
+  margin-bottom:1rem;
+  border:none;
+  border-radius:15px;
+  font-weight: bolder;
+}
+.cart-checkout:hover{
+  cursor: pointer;
   background-color: hsl(100,30%,40%);
 }
 
@@ -164,8 +183,23 @@
     max-height:8rem;
     max-width:8rem;
   }
+  .cart-total{
+    font-size:1.3rem;
+    margin-top:2rem;
+  }
+  .cart-checkout{
+    height:2rem;
+    width:10rem;
+    font-size: 1rem;
+    background-color: hsl(100,30%,50%);
+    color:white;
+    margin-bottom:1rem;
+    border:none;
+    border-radius:15px;
+    font-weight: bolder;
+  }
 }
-@media (min-width:331px) and (max-width:500px){
+@media (min-width:331px) and (max-width:510px){
   .cart-header-text{
     font-size:1.5rem;
     margin-right:1rem;
@@ -196,12 +230,25 @@
      max-height:13rem;
      max-width:13rem;
    }
+   .cart-total{
+    font-size:1.3rem;
+    margin-top:2rem;
+  }
+  .cart-checkout{
+    height:2rem;
+    width:10rem;
+    font-size: 1rem;
+    background-color: hsl(100,30%,50%);
+    color:white;
+    margin-bottom:1rem;
+    border:none;
+    border-radius:15px;
+    font-weight: bolder;
+  }
 
 }
-@media (min-width:405px) and (max-width:500px){
 
-}
-@media (min-width:501px) and (max-width:700px){
+@media (min-width:511px) and (max-width:700px){
   .cart{
     height:200rem;
     top:0;
@@ -215,6 +262,65 @@
     overflow-y: scroll;
     height:100vh;
     scroll-behavior: smooth;
+  }
+}
+
+@media(min-width:1500px){
+  .cart-header-text{
+    font-size:4rem;
+    margin-right:0;
+    margin-bottom:3.5rem;
+   }
+   .empty-cart-text{
+     font-size:3.5rem;
+     margin-top:1rem;
+   }
+   .close-cart{
+     margin-right:8rem;
+     margin-top:3.5rem;
+     margin-left:0rem;
+     font-size: 3rem;
+   }
+   .cart-count button{
+     width:4.5rem;
+     height:3.5rem;
+     margin-right:5rem;
+     margin-left: 5rem;
+     border:none;
+     background-color: hsl(100,30%,50%);
+     color:white;
+     font-size: 2.5rem;
+     border-radius:5px;
+   }
+   .cart-item-listing{
+     font-size:3rem;
+     line-height:2rem;
+   }
+   .cart-pic{
+     min-height:23rem;
+     max-height:23rem;
+     min-width:23rem;
+     max-width:23rem;
+   }
+   .cart-total{
+    font-size:3rem;
+    margin-top:4rem;
+  }
+  .cart-checkout{
+    height:5rem;
+    width:20rem;
+    font-size: 3rem;
+    background-color: hsl(100,30%,50%);
+    color:white;
+    margin-bottom:1rem;
+    border:none;
+    border-radius:15px;
+    font-weight: bolder;
+  }
+  .pseudo-shop-button{
+      min-height:4rem;
+      min-width:15rem;
+      font-size:2rem;
   }
 }
   

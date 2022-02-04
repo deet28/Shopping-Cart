@@ -19,6 +19,8 @@ function Cart() {
   let textHome;
   let textAbout;
   let pseudoButtons;
+  let total = 0;
+  let totalPrice;
 
   function makeCart(){
     if (state.cart.length === 0){
@@ -27,7 +29,9 @@ function Cart() {
       </div>
     }
     else if (state.cart.length > 0){
+      
       return state.cart.map((index => (
+
       <div className = "cart-item-div" key = {index.target.id}>
         <div className = "cart-item-pic">
         <img className = "cart-pic"src = {index.target.parentElement.firstElementChild.src}></img>
@@ -55,11 +59,24 @@ function Cart() {
             onClick = {addToCart}>+
             </button>
         </div>
-        
       </div>
       )))
     }
   }
+  const makeTotal = useSelector(state => {
+    state.cart.map((index => {
+      let temp = parseFloat(index.target.newPrice);
+      total += temp;
+    }))
+    totalPrice = total.toFixed(2);
+    if(totalPrice == 0){
+      return total = '';
+    } else {
+      total = `Total:$${totalPrice}`;
+      return total;
+    }
+    
+  })
 
   function hideDisplay(){
     shopCart = document.querySelector(".cart");
@@ -142,6 +159,8 @@ function Cart() {
           </div>
         </div>
         {makeCart()}
+        <p className = "cart-total">{total}</p>
+        <button className = "cart-checkout">Checkout</button>
     </div>
     </>
   );

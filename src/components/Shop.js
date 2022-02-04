@@ -42,7 +42,7 @@ function Shop() {
  
   return (
   <div className="App">
-      <h1 className = "page-title">Shop</h1>
+      <h1 className = "page-title-shop">Shop</h1>
     <div className = "shop-card-div">
       {jackets.map((index => (
         <div className = "shop-card" key = {index.id}>
