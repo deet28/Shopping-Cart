@@ -13,7 +13,7 @@
   min-height:100%;
   background-attachment: fixed;
 }
-.page-title{
+.page-title-about{
   margin-left:0;
 }
 
@@ -26,7 +26,7 @@
 }
 
 @media (max-width:500px){
-  .page-title{
+  .page-title-about{
     font-size:1.5rem;
   }
   .about-text{

@@ -5,7 +5,7 @@ function About() {
   return (
     <>
     <div className="App-About">
-      <h1 className = "page-title">about</h1>
+      <h1 className = "page-title page-title-about">about</h1>
       <div className = "about-des">
         <p className = "about-text">
         lorem ipsum dolor sit amet, consectetur adipiscing elit, 

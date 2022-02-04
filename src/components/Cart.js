@@ -23,7 +23,7 @@ function Cart() {
   function makeCart(){
     if (state.cart.length === 0){
     return<div>
-        <p>Nothing in Cart</p>
+        <p className = "empty-cart-text">Nothing in Cart</p>
       </div>
     }
     else if (state.cart.length > 0){
@@ -135,7 +135,7 @@ function Cart() {
     <>
     <div className = "cart">
         <div className = "cart-header">
-          <h2>Shopping Cart</h2>
+          <h2 className = "cart-header-text">Shopping Cart</h2>
           <div className = "close-cart"
             onClick = {hideCart}>
               X

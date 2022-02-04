@@ -83,21 +83,21 @@
     max-height:3rem;
   }
   .store-name{
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-top:1rem;
     margin-bottom:1.3rem;
-    margin-right:-0.2rem;
+    margin-right:-1.5rem;
   }
   .nav-item li{
     font-size: 1rem; 
     margin-right:0.3rem;
     margin-left:0.3rem;
-    margin-top:0.1rem;
+    margin-top:0.3rem;
     line-height: 3rem;
   }
   .nav-cart{
     min-width: 4rem;
-    margin-top:1.2rem;
+    margin-top:1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,25 +119,26 @@
 
 @media (min-width:331px) and (max-width:404px){
   .nav-bar{
-    min-height:3rem;
-    max-height:3rem;
+    min-height:4rem;
+    max-height:4rem;
   }
   .store-name{
-    font-size: 2.2rem;
-    margin-top:1rem;
+    font-size: 2.4rem;
+    margin-top:1.3rem;
     margin-bottom:1.3rem;
-    margin-right:0rem;
+    margin-right:0.1rem;
   }
   .nav-item li{
     font-size: 1.2rem; 
-    margin-right:0.6rem;
-    margin-left:0rem;
+    margin-right:1.7rem;
+    margin-left:-1rem;
     line-height: 3rem;
-    margin-top:0.2rem;
+    margin-top:0.5rem;
   }
   .nav-cart{
     min-width: 4rem;
-    margin-top:1.3rem;
+    margin-top:1.5rem;
+    margin-left:-0.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,11 +158,11 @@
 
 @media (min-width:405px) and (max-width:500px){
   .nav-bar{
-    min-height:4rem;
-    max-height:4rem;
+    min-height:3rem;
+    max-height:3rem;
   }
   .store-name{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top:1rem;
     margin-bottom:1.3rem;
     margin-right:-1.5rem;
@@ -169,7 +170,7 @@
   .nav-item li{
     font-size: 1.5rem; 
     margin-right:0.6rem;
-    margin-left:0rem;
+    margin-left:0.5rem;
     line-height: 3rem;
     margin-top:0.2rem;
   }
@@ -210,10 +211,8 @@
     padding-right:1rem;
   }
   .nav-main li{
-    margin-left:0;
     font-size: 1.5rem; 
     margin-right:1.8rem;
-    margin-left:0;
     line-height: 6rem;
   }
   .nav-cart{
