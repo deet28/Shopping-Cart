@@ -24,3 +24,37 @@
   max-width: 75vw;
   margin-left:0;
 }
+
+@media (max-width:320px){
+  .page-title-home{
+    font-size: 2rem;
+  }
+  .home-text{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top:0.8rem;
+    line-height:2.5rem;
+  }
+}
+@media (min-width:321px),(max-width:499px){
+  .page-title-home{
+    font-size: 2.5rem;
+  }
+  .home-text{
+    font-size: 2rem;
+    text-align: center;
+    margin-top:0.8rem;
+    line-height:5rem;
+  }
+}
+@media (min-width:500px),(max-width:699px){
+  .page-title-home{
+    font-size: 3rem;
+  }
+  .home-text{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top:1rem;
+    line-height:6rem;
+  }
+}

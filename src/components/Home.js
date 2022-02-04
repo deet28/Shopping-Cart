@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
     <div className="App-Home">
-      <h1 className = "page-title">home</h1>
+      <h1 className = "page-title-home">home</h1>
       <div className = "home-des">
         <p className = "home-text">
         Outer Wear

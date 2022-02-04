@@ -24,3 +24,14 @@
   max-width: 75vw;
   margin-left:0;
 }
+
+@media (max-width:500px){
+  .page-title{
+    font-size:1.5rem;
+  }
+  .about-text{
+    font-size: 1rem;
+    top: 0;
+    line-height:3rem;
+  }
+}

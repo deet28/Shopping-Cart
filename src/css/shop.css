@@ -77,3 +77,17 @@ p{
   }
 }
 
+@media(max-width:550px){
+  .shop-card-div{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:2px;
+    align-content: center;
+    padding: 2rem;
+    max-width: 100vw;
+    margin-right:1rem;
+    margin-left:1rem;
+    background-color: white;
+  }
+}
+

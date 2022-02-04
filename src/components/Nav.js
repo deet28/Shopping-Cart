@@ -84,7 +84,7 @@ function Nav() {
               src = {ShoppingCart} 
               className = "cart-button">
             </img>
-            <div>{amount}</div>
+            <div className = "nav-cart-amount">{amount}</div>
           </li>
       </ul>
     </div>
