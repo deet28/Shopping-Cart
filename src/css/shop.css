@@ -52,7 +52,7 @@ p{
   font-weight:bolder;
 }
 
-@media screen and (max-width:550px){
+@media only screen and (max-width:550px){
   .shop-card-div{
     display:grid;
     grid-template-columns: 1fr;
