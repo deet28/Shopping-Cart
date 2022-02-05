@@ -1,8 +1,7 @@
 import React from 'react';
-import { useState }from 'react';
 import Cart from './Cart'
 import { Link } from 'react-router-dom';
-import { useSelector,useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import ShoppingCart from '../media/ShoppingCart.png';
 
 function Nav() {
@@ -66,7 +65,7 @@ function Nav() {
     <>
     <Cart></Cart>
     <div className = "nav-main">
-      <h2 className = "store-name">coats.</h2>
+      <h2 className = "store-name">coats</h2>
       <ul className = "nav-bar">
         <Link className = "nav-item" to = "/Home">
           <li>Home</li>

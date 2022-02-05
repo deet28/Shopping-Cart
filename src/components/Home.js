@@ -8,8 +8,7 @@ function Home() {
       <h1 className = "page-title page-title-home">home</h1>
       <div className = "home-des">
         <p className = "home-text">
-        Outer Wear
-        for the Inner You
+        Men's outer wear
         </p>
       </div>
     </div>

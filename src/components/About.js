@@ -1,5 +1,4 @@
 import React from 'react';
-import StockJacket from '../media/StockJacket.jpg';
 
 function About() {
   return (
