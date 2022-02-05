@@ -59,6 +59,9 @@ p{
   .shop-card-div{
     grid-template-columns: 1fr !important;
   }
+  .shop-button{
+    font-size:0.6rem;
+  }
 }
 
 @media(min-width:551px) and (max-width:770px){
