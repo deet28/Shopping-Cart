@@ -99,58 +99,34 @@ function Cart() {
     footerText.classList.remove('opaque-text');
     storeName.classList.remove('opaque-text');
 
-    for(let i = 0; i < buttons.length; i++){
-      if (shopCart.classList.contains('visible')===true){
-      buttons[i].classList.add('hidden-button');
-      images[i].classList.add('hidden');
-      }else{
-      buttons[i].classList.remove('hidden-button');
-      images[i].classList.remove('hidden');
-      }
-    }
-    for(let i = 0; i<pseudoButtons.length;i++){
-      if(shopCart.classList.contains('visible')===true){
-        pseudoButtons[i].classList.add('pseudo-dummy')
-      } else {
-        pseudoButtons[i].classList.remove('pseudo-dummy')
-      }
-    }
-    for(let i = 0; i < shopText.length; i++){
-      if (shopCart.classList.contains('visible')===true){
-        shopText[i].classList.add('hidden');
-      }else{
-        shopText[i].classList.remove('hidden');
-      }
-    }
-    for(let i = 0; i < pageTitle.length;i++){
-      if(shopCart.classList.contains('visible')===true){
-        pageTitle[i].classList.add('hidden');
-      }else{
-        pageTitle[i].classList.remove('hidden');
-      }
-    }
-    for(let i = 0;i < navButtons.length; i++){
-      if(shopCart.classList.contains('visible')===true){
-        navButtons[i].classList.add('hidden-list')
-      } else {
-        navButtons[i].classList.remove('hidden-list')
-      }
-      for(let i = 0;i < textHome.length; i++){
-        if(shopCart.classList.contains('visible')===true){
-          textHome[i].classList.add('hidden')
-        } else {
-          textHome[i].classList.remove('hidden')
-        }
-      }
-      for(let i = 0;i < textAbout.length; i++){
-        if(shopCart.classList.contains('visible')===true){
-          textAbout[i].classList.add('hidden')
-        } else {
-          textAbout[i].classList.remove('hidden')
-        }
-      }
-    }
+    buttons.forEach(button => {
+      button.classList.remove('hidden-button')
+    })
+    images.forEach(image => {
+      image.classList.remove('hidden')
+    })
+    pseudoButtons.forEach(button => {
+      button.classList.remove('pseudo-dummy')
+    })
+    shopText.forEach(text => {
+      text.classList.remove('hidden')
+    })
+    pageTitle.forEach(title => {
+      title.classList.remove('hidden')
+    })
+    navButtons.forEach(button => {
+      button.classList.remove('hidden-list')
+    })
+    textHome.forEach(text => {
+      text.classList.remove('hidden')
+    })
+    textAbout.forEach(text => {
+      text.classList.remove('hidden')
+    })
+
+
   }
+
 
   function hideCart(){
     shopCart = document.querySelector('.cart');
