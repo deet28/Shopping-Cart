@@ -1,0 +1,8 @@
+.footer-main{
+  height:10rem;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  width:100%;
+  color:white;
+  margin-top:-2rem;
+}
+

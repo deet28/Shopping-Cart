@@ -3,6 +3,7 @@
 @import 'shop.css';
 @import 'home.css';
 @import 'about.css';
+@import 'footer.css';
 
 html{
   overflow-x: hidden;
@@ -10,7 +11,7 @@ html{
 
 body {
   margin: 0;
-  font-family:'Roboto', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

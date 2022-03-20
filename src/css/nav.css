@@ -1,7 +1,9 @@
 .nav-main{
   display:flex;
   flex-direction: row;
-  background-color: rgb(236, 239, 240);
+  /*background-color: rgb(236, 239, 240);*/
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color:White;
   
 }
 .nav-bar{
@@ -47,8 +49,9 @@
   min-height: 2rem;
   min-width: 4.5rem;
   margin-top: 3.5rem;
-  margin-right:2.5rem;
+  margin-right:0.3rem;
   border-radius: 80px;
+  filter:invert(100%);
 }
 
 .nav-cart:hover{
@@ -58,7 +61,7 @@
   margin-left:0.3rem;
   font-size: 1.1rem;
   margin-top:-1rem;
-  color:red;
+  color:rgb(64, 154, 184);
   font-weight: bolder;
 }
 

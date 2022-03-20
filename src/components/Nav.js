@@ -1,5 +1,6 @@
 import React from 'react';
 import Cart from './Cart'
+import { useEffect } from'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import ShoppingCart from '../media/ShoppingCart.png';
@@ -33,9 +34,10 @@ function Nav() {
     buttons = document.querySelectorAll(".shop-button");
     shopText = document.querySelectorAll(".shop-text");
     pageTitle = document.querySelectorAll(".page-title");
-    navButtons = document.querySelectorAll(".nav-item")
-    textHome = document.querySelectorAll(".home-text")
-    textAbout = document.querySelectorAll(".about-text")
+    navButtons = document.querySelectorAll(".nav-item");
+    textHome = document.querySelectorAll(".home-text");
+    textAbout = document.querySelectorAll(".about-text");
+    const footerText = document.querySelector('.footer-main');
     pseudoButtons = document.querySelectorAll(".pseudo-shop-button");
     
     shopCart.classList.add('visible');
@@ -59,7 +61,9 @@ function Nav() {
     for(let i = 0; i < textAbout.length; i++){
       textAbout[i].classList.add('hidden');
     }
+    footerText.classList.add('opaque-text');
   }
+
  
   return (
     <>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect,useState } from 'react';
 import { useSelector,useDispatch } from 'react-redux'
 import { actionCreators } from "../state/index"
 import { bindActionCreators } from "redux"
@@ -22,10 +23,12 @@ function Cart() {
   let total = 0;
   let totalPrice;
 
+
+
   function makeCart(){
     if (state.cart.length === 0){
     return<div>
-        <p className = "empty-cart-text">Nothing in Cart</p>
+        <p className = "empty-cart-text auto">Nothing in Cart</p>
       </div>
     }
     else if (state.cart.length > 0){
@@ -33,12 +36,12 @@ function Cart() {
       return state.cart.map((index => (
 
       <div className = "cart-item-div" key = {index.target.id}>
-        <div className = "cart-item-pic">
-        <img className = "cart-pic"src = {index.target.parentElement.firstElementChild.src}></img>
+        <div className = "cart-item-pic auto">
+        <img className = "cart-pic auto"src = {index.target.parentElement.firstElementChild.src}></img>
         </div>
-        <p className = "cart-item-listing"> {index.target.name}</p>
-        <p className = "cart-item-listing"> ${index.target.newPrice}</p>
-        <div className = "cart-count">
+        <p className = "cart-item-listing auto"> {index.target.name}</p>
+        <p className = "cart-item-listing auto"> ${index.target.newPrice}</p>
+        <div className = "cart-count auto">
           <button 
             type = "submit" 
             name = {index.target.name}
@@ -46,16 +49,16 @@ function Cart() {
             id = {index.target.id}
             title = {index.target.count}
             onClick = {removeFromCart}
-            className = "cart-count-minus">-
+            className = "cart-count-minus auto">-
           </button>
-          <p className = "cart-item-listing"> {index.target.title} </p>
+          <p className = "cart-item-listing auto"> {index.target.title} </p>
           <button 
-            type = "submit" 
+            type = "submit auto" 
             name = {index.target.name}
             value = {index.target.price}
             id = {index.target.id}
             title = {index.target.count}
-            className = "cart-count-plus"
+            className = "cart-count-plus auto"
             onClick = {addToCart}>+
             </button>
         </div>
@@ -147,20 +150,41 @@ function Cart() {
     shopCart.classList.remove('visible');
     hideDisplay();
   }
+  
+  function closeCartAuto(e){
+    if (e.target.classList.contains('nav-cart')==true
+    ||e.target.classList.contains('nav-item')==true
+    ||e.target.classList.contains('cart-button')==true
+    ||e.target.classList.contains('nav-cart-amount')==true){
+      return;
+    } else if (e.target.classList.contains('auto')==true){
+      return;
+    } else {
+      console.log('working')
+      return hideCart();
+    }
+  }
+
+  useEffect(()=>{
+    window.addEventListener("click",closeCartAuto)
+      return () => {
+      window.removeEventListener('click', closeCartAuto); 
+    }
+  },[])
 
   return (
     <>
-    <div className = "cart">
-        <div className = "cart-header">
-          <h2 className = "cart-header-text">Shopping Cart</h2>
+    <div className = "cart auto">
+        <div className = "cart-header auto">
+          <h2 className = "cart-header-text auto">Shopping Cart</h2>
           <div className = "close-cart"
             onClick = {hideCart}>
               X
           </div>
         </div>
         {makeCart()}
-        <p className = "cart-total">{total}</p>
-        <button className = "cart-checkout">Checkout</button>
+        <p className = "cart-total auto">{total}</p>
+        <button className = "cart-checkout auto">Checkout</button>
     </div>
     </>
   );

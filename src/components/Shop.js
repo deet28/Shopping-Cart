@@ -41,7 +41,7 @@ function Shop() {
 
  
   return (
-  <div className="App">
+  <div className="App shop-main">
       <h1 className = "page-title-shop">Shop</h1>
     <div className = "shop-card-div">
       {jackets.map((index => (
