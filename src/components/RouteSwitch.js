@@ -17,11 +17,10 @@ const RouteSwitch = () => {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path = "/" element = {<Home  />}/>
-        <Route path = "/cart" element = {<Cart />}/>
-        <Route path = "/shop" element = {<Shop />} />
-        <Route path = "/about" element = {<About />}/>
-        <Route element = {<Home />}/>
+        <Route path = "/Shopping-Cart/" element = {<Home  />}/>
+        <Route path = "/Shopping-Cart/cart" element = {<Cart />}/>
+        <Route path = "/Shopping-Cart/shop" element = {<Shop />} />
+        <Route path = "/Shopping-Cart/about" element = {<About />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
