@@ -1,8 +1,46 @@
-.footer-main{
-  height:10rem;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+.Contact-Main{
+  bottom:0;
+  margin-top:-1rem;
+  background-color: rgb(37, 37, 37);
+  min-height:5rem;
   width:100%;
   color:white;
-  margin-top:-2rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
+.Contact-Main-Text{
+  margin-left:1rem;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Contact-Info{
+  margin-top:0;
+  font-size: 0.9rem;
+}
+
+.Contact-Bottom{
+  background-color:black;
+  min-width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Contact-Bottom-Text{
+  margin-left:1rem;
+  font-size: 1rem;
+  
+}
+
+.Source-Code-Link{
+  margin-right:2rem;
+  font-size: 1rem;
+  
+}
+.Source-Code-Link:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}

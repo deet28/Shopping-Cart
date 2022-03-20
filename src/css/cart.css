@@ -110,48 +110,6 @@
   background-color: hsl(100,30%,40%);
 }
 
-.visible{
-  visibility:visible;
-  z-index: 2;
-  transform-origin: 100% 50%;
-  transform:translateX(-150%);
-  transition:1s;
-  overflow-y: scroll;
-  height:100vh;
-}
-
-.hidden{
-  opacity:0.5;
-}
-
-.hidden-button{
-  opacity:0.5;
-  z-index:-1 !important;
-  cursor:default !important;
-  pointer-events:none !important;
-}
-
-.pseudo-shop-button{
-  height:0rem !important;
-  visibility:hidden;
-  z-index:-2;
-}
-
-.pseudo-dummy{
-  opacity:0.5;
-  visibility:visible !important;
-  height:2rem!important;
-  z-index:0!important;
-  width:7rem;
-  font-size: 1rem;
-  background-color: hsl(100,30%,50%);
-  color:white;
-  border:none;
-  border-radius:50px;
-  margin-top:0.9rem;
-}
-
-
 @media (min-width:0px) and (max-width:330px){
   .cart-header-text{
    font-size:1.3rem;

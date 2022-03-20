@@ -22,6 +22,8 @@ function Cart() {
   let pseudoButtons;
   let total = 0;
   let totalPrice;
+  let footerText;
+  let storeName;
 
 
 
@@ -91,7 +93,12 @@ function Cart() {
     textHome = document.querySelectorAll(".home-text");
     textAbout = document.querySelectorAll(".about-text");
     pseudoButtons = document.querySelectorAll(".pseudo-shop-button");
-    
+    footerText = document.querySelector(".Contact-Main");
+    storeName = document.querySelector('.store-name');
+
+    footerText.classList.remove('opaque-text');
+    storeName.classList.remove('opaque-text');
+
     for(let i = 0; i < buttons.length; i++){
       if (shopCart.classList.contains('visible')===true){
       buttons[i].classList.add('hidden-button');

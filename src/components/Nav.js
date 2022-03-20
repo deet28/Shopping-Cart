@@ -27,9 +27,12 @@ function Nav() {
   let textHome;
   let textAbout;
   let pseudoButtons;
+  let footerText;
+  let storeName;
 
   function showCart(){
     shopCart = document.querySelector('.cart');
+    storeName = document.querySelector('.store-name');
     images = document.querySelectorAll(".shop-image");
     buttons = document.querySelectorAll(".shop-button");
     shopText = document.querySelectorAll(".shop-text");
@@ -37,8 +40,11 @@ function Nav() {
     navButtons = document.querySelectorAll(".nav-item");
     textHome = document.querySelectorAll(".home-text");
     textAbout = document.querySelectorAll(".about-text");
-    const footerText = document.querySelector('.footer-main');
     pseudoButtons = document.querySelectorAll(".pseudo-shop-button");
+    footerText = document.querySelector('.Contact-Main')
+
+    footerText.classList.add('opaque-text');
+    storeName.classList.add('opaque-text');
     
     shopCart.classList.add('visible');
     for(let i = 0; i < buttons.length; i++){
@@ -61,7 +67,6 @@ function Nav() {
     for(let i = 0; i < textAbout.length; i++){
       textAbout[i].classList.add('hidden');
     }
-    footerText.classList.add('opaque-text');
   }
 
  
