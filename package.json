@@ -16,7 +16,7 @@
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
-  "homepage":"http://deet28.github.io/",
+  "homepage":"http://deet28.github.io/Shopping-Cart",
   "scripts": {
     "start": "react-scripts start",
     "predeploy":"npm run build",

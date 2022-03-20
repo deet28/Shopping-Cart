@@ -21,6 +21,7 @@ const RouteSwitch = () => {
         <Route path = "/cart" element = {<Cart />}/>
         <Route path = "/shop" element = {<Shop />} />
         <Route path = "/about" element = {<About />}/>
+        <Route element = {<Home />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
