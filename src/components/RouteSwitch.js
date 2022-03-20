@@ -17,8 +17,8 @@ const RouteSwitch = () => {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path = "/" element = {<Cart />}/>
-        <Route path = "/Home" element = {<Home  />}/>
+        <Route path = "/cart" element = {<Cart />}/>
+        <Route path = "/" element = {<Home  />}/>
         <Route path = "/shop" element = {<Shop />} />
         <Route path = "/about" element = {<About />}/>
       </Routes>

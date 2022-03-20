@@ -1,6 +1,5 @@
 import React from 'react';
 import Cart from './Cart'
-import { useEffect } from'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import ShoppingCart from '../media/ShoppingCart.png';
@@ -45,7 +44,7 @@ function Nav() {
 
     footerText.classList.add('opaque-text');
     storeName.classList.add('opaque-text');
-    
+
     shopCart.classList.add('visible');
     for(let i = 0; i < buttons.length; i++){
       buttons[i].classList.add('hidden-button');
@@ -76,7 +75,7 @@ function Nav() {
     <div className = "nav-main">
       <h2 className = "store-name">coats</h2>
       <ul className = "nav-bar">
-        <Link className = "nav-item" to = "/Home">
+        <Link className = "nav-item" to = "/">
           <li>Home</li>
         </Link>
         <Link className = "nav-item" to = "/Shop">
